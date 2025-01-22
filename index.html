@@ -9,47 +9,74 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 <!-- navbar and hero section start  -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Saifur</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Project
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+<div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h7" />
+        </svg>
       </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        <li><a>Homepage</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>About</a></li>
+      </ul>
     </div>
-  </nav>
-         
+  </div>
+  <div class="navbar-center">
+    <a class="btn btn-ghost text-xl">Saifur</a>
+  </div>
+  <div class="navbar-end">
+    <button class="btn btn-ghost btn-circle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </button>
+    <button class="btn btn-ghost btn-circle">
+      <div class="indicator">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+        </svg>
+        <span class="badge badge-xs badge-primary indicator-item"></span>
+      </div>
+    </button>
+  </div>
+</div>
+       
 
   <!-- Hero Section -->
    <section id="main-container">
@@ -57,9 +84,9 @@
     <div class="hero-content flex-col lg:flex-row-reverse mx-auto  bg-green-200 my-4 rounded-xl">
         <img
           src="images/IMG-20230828-WA0003-removebg-preview.png"
-          class="max-w-sm rounded-lg shadow-2xl bg-white " />
+          class="max-w-sm rounded-lg  bg-green-200 " />
         <div>
-          <h1 class="text-5xl font-bold">Hi My Name is,<br>Saifur Rahman </h1>
+          <h1 class="text-5xl font-bold"><span class="text-red-500">Hi My Name is,</span><br>Saifur Rahman </h1>
           <p class="py-6">
             Web development is the process of creating websites and web applications that run on browsers. It involves various tasks like designing, building, and maintaining websites. Web development can be broadly categorized.Iam Expert on Technologies used include HTML, CSS, and JavaScript.Frameworks like React, Angular, and Vue.js help create dynamic and responsive designs.
             </p>
@@ -125,9 +152,9 @@
 
   <!-- my Service Section -->
 <h1 class="text-center text-3xl font-bold mb-8">My Service</h1>
-   <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 lg:px-8 border border-black border-none rounded-xl">
+   <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 lg:px-8 border border-black border-none rounded-xl bg-white">
      <!-- Card 1 -->
-     <div class=" lg:card bg-base-100 shadow-xl  rounded-xl ">
+     <div class=" lg:card bg-base-100 shadow-xl  rounded-xl bg-slate-300">
        <figure>
          <img class="mx-auto "   src="images/download (1).png" alt="Web and Mobile Design Services" />
        </figure>
@@ -140,7 +167,7 @@
        </div>
      </div>
      <!-- Card 2 -->
-     <div class="lg:card bg-base-100 shadow-xl  rounded-xl ">
+     <div class="lg:card bg-base-100 shadow-xl  rounded-xl bg-orange-200">
        <figure>
          <img class="mx-auto" src="images/download.png" alt="Web Development Services" />
        </figure>
@@ -150,7 +177,7 @@
        </div>
      </div>
      <!-- Card 3 -->
-     <div class="lg:card bg-base-100 shadow-xl">
+     <div class="lg:card bg-base-100 shadow-xl bg-cyan-200">
        <figure>
          <img  class="mx-auto"src="images/download (2).png" alt="App Development Services" />
        </figure>
@@ -233,16 +260,16 @@
           <div class="p-4">
             <h3 class="text-lg font-semibold text-gray-800">Fitness Website</h3>
             <p class="text-sm text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam possimus perspiciatis, architecto commodi cum quam odio labore molestiae ipsum, repudiandae est hic itaque nulla adipisci sequi rerum quod debitis.</p>
-            <a href="#" class="text-blue-500 text-sm mt-4 inline-block hover:underline">View Project</a>
+            <a href="https://github.com/saifur2468/Fitness-web" target="_blank" rel="noopener noreferrer" class="text-blue-500 text-sm mt-4 inline-block hover:underline">View Project</a>
           </div>
         </div>
           <!-- Project Card 4 -->
           <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
-            <img src="images/bbbb.JPG" alt="Project 3" class="w-full h-48 object-cover">
+            <img src="images/yyyyyyyy.JPG" alt="Project 3" class="w-full h-48 object-cover">
             <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-800">Online bike shop</h3>
+              <h3 class="text-lg font-semibold text-gray-800">Traveling Web </h3>
               <p class="text-sm text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam possimus perspiciatis, architecto commodi cum quam odio labore molestiae ipsum, repudiandae est hic itaque nulla adipisci sequi rerum quod debitis.</p>
-              <a href="#" class="text-blue-500 text-sm mt-4 inline-block hover:underline">View Project</a>
+              <a href="https://github.com/saifur2468/Hero-travel" target="_blank" rel="noopener noreferrer"  class="text-blue-500 text-sm mt-4 inline-block hover:underline">View Project</a>
             </div>
           </div>
             <!-- Project Card 5 -->
@@ -270,73 +297,60 @@
   </section>
 
 <!-- Contact From -->
+<section class="px-4 py-8 bg-teal-200">
+  <h1 class="lg:mx-2 text-2xl font-serif text-center mb-4">Let's Contact</h1>
+  <p class="mx-2 my-2 font-serif text-xl text-center lg:text-left">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat qui voluptatibus ea accusamus nobis obcaecati maiores ducimus reprehenderit, animi cupiditate earum cum dolores ipsa deserunt suscipit fugiat ullam dolorum fuga.
+  </p>
 
-<h1 class="lg:text-3xl text-center font-serif">Contact Me And Ask Question</h1>
+  <main class="lg:flex lg:justify-between items-start space-y-6 lg:space-y-0">
+    <!-- Left Section (Form) -->
+    <form class="bg-white p-6 rounded shadow-md w-full lg:w-1/2 space-y-4">
+      <div>
+        <label for="name" class="block text-lg font-medium mb-2">Name:</label>
+        <input type="text" id="name" class="w-full border border-gray-300 rounded p-2" placeholder="Enter Your Name">
+      </div>
 
-<form class="row g-3">
-    <div class="col-md-4">
-      <label for="validationServer01" class="form-label">First name</label>
-      <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-      <div class="valid-feedback">
-        Looks good!
+      <div>
+        <label for="email" class="block text-lg font-medium mb-2">Email:</label>
+        <input type="email" id="email" class="w-full border border-gray-300 rounded p-2" placeholder="Enter Your Email">
       </div>
-    </div>
-    <div class="col-md-4">
-      <label for="validationServer02" class="form-label">Last name</label>
-      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-      <div class="valid-feedback">
-        Looks good!
+
+      <div>
+        <label for="phone" class="block text-lg font-medium mb-2">Phone Number:</label>
+        <input type="number" id="phone" class="w-full border border-gray-300 rounded p-2" placeholder="Enter Your Phone Number">
       </div>
-    </div>
-    <div class="col-md-4">
-      <label for="validationServerUsername" class="form-label">Username</label>
-      <div class="input-group has-validation">
-        <span class="input-group-text" id="inputGroupPrepend3">@</span>
-        <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-        <div id="validationServerUsernameFeedback" class="invalid-feedback">
-          Please choose a username.
-        </div>
+
+      <div>
+        <label for="bio" class="block text-lg font-medium mb-2">Question:</label>
+        <textarea id="bio" class="w-full border border-gray-300 rounded p-2" rows="4" placeholder="Write something about yourself"></textarea>
       </div>
+
+      <button type="submit" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition">
+        Submit
+      </button>
+    </form>
+
+    <!-- Right Section (Social Icons) -->
+    <div class="flex flex-col-reverse">
+      <a href="https://facebook.com" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=z657ovoGgS2o&format=png&color=000000" alt="Facebook" class="w-12 h-12">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="Instagram" class="w-12 h-12">
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn" class="w-12 h-12">
+      </a>
+      <a href="https://github.com" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt="GitHub" class="w-12 h-12">
+      </a>
     </div>
-    <div class="col-md-6">
-      <label for="validationServer03" class="form-label">City</label>
-      <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-      <div id="validationServer03Feedback" class="invalid-feedback">
-        Please provide a valid city.
-      </div>
-    </div>
-    <div class="col-md-3">
-      <label for="validationServer04" class="form-label">State</label>
-      <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
-      <div id="validationServer04Feedback" class="invalid-feedback">
-        Please select a valid state.
-      </div>
-    </div>
-    <div class="col-md-3">
-      <label for="validationServer05" class="form-label">Zip</label>
-      <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-      <div id="validationServer05Feedback" class="invalid-feedback">
-        Please provide a valid zip.
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-        <label class="form-check-label" for="invalidCheck3">
-          Agree to terms and conditions
-        </label>
-        <div id="invalidCheck3Feedback" class="invalid-feedback">
-          You must agree before submitting.
-        </div>
-      </div>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </div>
-  </form>
+  </main>
+</section>
+
+    
+    
 <!-- footer  -->
   <footer class="footer bg-neutral text-neutral-content p-10">
     <aside>
